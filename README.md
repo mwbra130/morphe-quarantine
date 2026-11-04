@@ -7,6 +7,7 @@ Patch sets quarantined from the main bundle ([mwbra130/Retro-Bowl-College](https
 | App | Package | Why it's here |
 |---|---|---|
 | DiskWala | `com.diskwalaapp` | PairIP native wall: the patched build is blocked by PairIP's native license layer ("Get this app from Play"); no dex patch surface remains. Closed. |
+| DiskWala (kuntal port) | `com.diskwalaapp` | Port of [kuntal-devrat/diskwala-patches](https://github.com/kuntal-devrat/diskwala-patches) (credit to kuntal-devrat; his original targeted DiskWala 24.5), retargeted to DiskWala 27.3 and shipped in the main bundle as v1.62.3 to v1.62.6. Failed on-device through every iteration: patch-time native-guard refusal (fixed in v1.62.4), launch crash (v1.62.4), patch-time manifest failure (v1.62.5), and failed again on v1.62.6. Moved to quarantine at Matsen's instruction on 2026-11-03. Kept under its own package path `patches/src/main/kotlin/app/diskwala/patches/`, separate from the zdrgon DiskWala set above. Storage/reference only. |
 | Yin Yang Launcher | `com.yinyang.launcher` | Premium does not unlock on device despite two Desktop-verified pin strategies; parked unresolved. |
 | X-plore | `com.lonelycatgames.Xplore` | PairIP native wall: the patched build hits the "Get this app from Play" block at startup. Closed. |
 | Vehico | `com.optimageeks.vehico_app` | The "Remove ads" patch failed on device; parked. (Premium is server-gated and was never shipped.) |
@@ -17,6 +18,6 @@ Patch sets quarantined from the main bundle ([mwbra130/Retro-Bowl-College](https
 
 ## Layout
 
-This repo mirrors the main bundle's build scaffolding (Gradle wrapper, settings, patches module) with only the quarantined patch sets under `patches/src/main/kotlin/app/zdrgon/patches/`, copied exactly as they were in the main bundle — including their experimental flags and defaults — at the time of the move (main bundle v1.59.0, 2026-11-03). BusinessX was added later the same day, copied from main bundle v1.60.0. The Strava set (patch package, `extensions/strava` module and design docs) was added later the same day, copied from main bundle v1.60.0.
+This repo mirrors the main bundle's build scaffolding (Gradle wrapper, settings, patches module) with only the quarantined patch sets under `patches/src/main/kotlin/app/zdrgon/patches/`, copied exactly as they were in the main bundle — including their experimental flags and defaults — at the time of the move (main bundle v1.59.0, 2026-11-03). BusinessX was added later the same day, copied from main bundle v1.60.0. The Strava set (patch package, `extensions/strava` module and design docs) was added later the same day, copied from main bundle v1.60.0. The DiskWala kuntal port was added on 2026-11-03, copied from main bundle v1.62.6 under its original package path `patches/src/main/kotlin/app/diskwala/patches/` — it does not replace the earlier zdrgon DiskWala set; both are kept, clearly separated by package.
 
 Release workflows are intentionally not committed here; this repo is storage/quarantine, not a distribution source.
