@@ -1,6 +1,6 @@
-package app.diskwala.patches.native
+package app.zdrgon.patches.diskwala.native
 
-import app.diskwala.patches.shared.Constants.COMPATIBILITY_DISKWALA
+import app.zdrgon.patches.diskwala.shared.ConstantsAlt.COMPATIBILITY_DISKWALA
 import app.morphe.patcher.patch.resourcePatch
 import java.io.File
 import java.io.RandomAccessFile

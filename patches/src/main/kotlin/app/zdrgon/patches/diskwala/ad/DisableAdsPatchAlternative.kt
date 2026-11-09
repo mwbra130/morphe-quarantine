@@ -1,4 +1,4 @@
-package app.diskwala.patches.ad
+package app.zdrgon.patches.diskwala.ad
 
 // This file is intentionally left as documentation for alternative resource-level ad hiding.
 // If bytecode stubbing is not desired, you can use a rawResourcePatch to delete ad assets:

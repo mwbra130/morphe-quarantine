@@ -1,6 +1,6 @@
-package app.diskwala.patches.update
+package app.zdrgon.patches.diskwala.update
 
-import app.diskwala.patches.shared.Constants.COMPATIBILITY_DISKWALA
+import app.zdrgon.patches.diskwala.shared.ConstantsAlt.COMPATIBILITY_DISKWALA
 import app.morphe.patcher.extensions.InstructionExtensions.addInstructions
 import app.morphe.patcher.extensions.InstructionExtensions.removeInstructions
 import app.morphe.patcher.patch.bytecodePatch

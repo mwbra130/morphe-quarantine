@@ -1,11 +1,11 @@
-package app.diskwala.patches.shared
+package app.zdrgon.patches.diskwala.shared
 
 import app.morphe.patcher.patch.ApkFileType
 import app.morphe.patcher.patch.AppTarget
 import app.morphe.patcher.patch.Compatibility
 import app.morphe.patcher.patch.SupportedAbi
 
-object Constants {
+object ConstantsAlt {
     val COMPATIBILITY_DISKWALA = Compatibility(
         name = "DiskWala",
         packageName = "com.diskwalaapp",

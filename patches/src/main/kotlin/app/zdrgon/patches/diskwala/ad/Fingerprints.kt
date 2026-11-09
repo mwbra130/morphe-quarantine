@@ -1,4 +1,4 @@
-package app.diskwala.patches.ad
+package app.zdrgon.patches.diskwala.ad
 
 import app.morphe.patcher.Fingerprint
 import app.morphe.patcher.methodCall

@@ -1,6 +1,6 @@
-package app.diskwala.patches.ad
+package app.zdrgon.patches.diskwala.ad
 
-import app.diskwala.patches.shared.Constants.COMPATIBILITY_DISKWALA
+import app.zdrgon.patches.diskwala.shared.ConstantsAlt.COMPATIBILITY_DISKWALA
 import app.morphe.patcher.Fingerprint
 import app.morphe.patcher.extensions.InstructionExtensions.addInstructions
 import app.morphe.patcher.patch.bytecodePatch
